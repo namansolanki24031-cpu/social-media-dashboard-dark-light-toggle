@@ -1,0 +1,13 @@
+@use '../utils' as *;
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Playwrite+GB+S+Guides:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-inter : 'Inter','sans-serif';
+}
+
+h1{
+    font-size: rem(24);
+    @include breakpoint{
+        font-size: rem(28);
+    }
+}

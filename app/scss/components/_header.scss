@@ -1,0 +1,24 @@
+@use '../utils/' as *;
+
+.header {
+    @include breakpoint{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    // &__title{
+
+    // }
+
+    &__subtitle{
+        font-size: rem(16);
+        color: var(--dark-text1);
+        font-width: 700;
+    }
+
+    // &__toggle {
+
+    // }
+}

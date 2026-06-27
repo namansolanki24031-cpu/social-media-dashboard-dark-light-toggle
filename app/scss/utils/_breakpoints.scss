@@ -1,0 +1,8 @@
+@use 'functions' as *;
+
+@mixin breakpoint($size : rem(700)){
+    @media (min-width:$size){
+        @content;
+    }
+}
+
