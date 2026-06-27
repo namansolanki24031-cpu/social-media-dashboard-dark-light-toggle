@@ -25,6 +25,10 @@
         height: rem(18);
         width: rem(18);
         margin-top: rem(4);
+
+        #light:checked ~.toggle_button{
+            
+        }
     }
     
     &__background{
@@ -64,6 +68,8 @@
         }
 
     }
+
+
 
 
 }
