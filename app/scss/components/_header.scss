@@ -1,8 +1,9 @@
 @use '../utils/' as *;
 
 .header {
+    display: flex;
+    flex-direction: column;
     @include breakpoint{
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -18,7 +19,10 @@
         font-width: 700;
     }
 
-    // &__toggle {
-
-    // }
+    &__toggle {
+        align-self: flex-start;
+        @include breakpoint{
+            align-self: default;
+        }
+    }
 }

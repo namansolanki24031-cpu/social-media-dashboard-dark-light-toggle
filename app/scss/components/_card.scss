@@ -1,0 +1,49 @@
+@use '../utils/' as *;
+
+.card{
+    background-color: var(--dark-card);
+    color: var(--dark-text1);
+    &__icon{
+        &--facebook{
+            
+        }
+    
+        &--twitter{
+    
+        }
+    
+        &--instagram{
+    
+        }
+    
+        &--youtube{
+    
+        }
+    
+        &--username{
+    
+        }
+    }
+
+    &__count{
+        &--big{
+
+        }
+        &--small{
+
+        }
+    }
+
+    &__label{
+
+    }
+
+    &__change{
+        &--up{
+
+        }
+        &--down{
+
+        }
+    }
+}
