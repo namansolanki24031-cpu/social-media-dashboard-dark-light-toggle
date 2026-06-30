@@ -8,6 +8,9 @@
         justify-content: space-between;
     }
 
+    margin-bottom: rem(30);
+
+
 
     // &__title{
 
@@ -15,8 +18,8 @@
 
     &__subtitle{
         font-size: rem(16);
-        color: var(--dark-text1);
-        font-width: 700;
+        color: var(--text-color2);
+        font-weight: 700;
     }
 
     &__toggle {

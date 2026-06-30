@@ -13,6 +13,6 @@ body{
     @include breakpoint{
         padding: rem(20) rem(50) rem(35) rem(50);
     }
-    background-color: var(--dark-bg);
-    color: var(--dark-text2);
+    background-color: var(--bg);
+    color: var(--text-color);
 }

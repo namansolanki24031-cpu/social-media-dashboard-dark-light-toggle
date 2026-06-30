@@ -27,14 +27,11 @@
     <fieldset aria-label="Toggle button" role="switch" class="header__toggle toggle">
       <label for="dark"> Dark mode </label>
       <div class="toggle__wrapper">
-        <input type="radio" name="theme" id="dark">
-        <input type="radio" name="theme" id="system" checked>
+        <input type="radio" name="theme" id="dark" checked>
         <input type="radio" name="theme" id="light">
         <span aria-hidden="true" class="toggle__background"></span>
         <span aria-hidden="true" class="toggle__button"></span>
       </div>
-      <label for="system"> System</label>
-      <label for="light"> Light mode </label>
     </fieldset>
 
   </header>
@@ -107,45 +104,85 @@
       </div>
     </section>
 
-    <section class="">
-      <h1>Overview - Today</h1>
-      <div>
-        <div>Page Views</div>
-        <img src="images/icon-facebook.svg" alt="Facebook">
-        <div>87</div>
-        <div>3%</div>
+    <section>
+      <h2>Overview - Today</h2>
+      <div class="bottom-cards">
+        <div class="bottom-card">
+          <div class="bottom-card__views">Page Views</div>
+          <img class="bottom-card__icon"  src="images/icon-facebook.svg" alt="Facebook">
+          <div class="bottom-card__number">87</div>
+          <div class="bottom-card__change bottom-card__change--up">
+            <img src="images/icon-up.svg" alt="Up">
+            <div>3%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Likes</div>
+          <img class="bottom-card__icon"  src="images/icon-facebook.svg" alt="Facebook">
+          <div class="bottom-card__number">52</div>
+          <div class="bottom-card__change bottom-card__change--down">
+            <img src="images/icon-down.svg" alt="Down">
+            <div>2%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Likes</div>
+          <img class="bottom-card__icon"  src="images/icon-instagram.svg" alt="Instagram">
+          <div class="bottom-card__number">5462</div>
+          <div class="bottom-card__change bottom-card__change--up">
+            <img src="images/icon-up.svg" alt="Up">
+            <div>2257%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Profile Views</div>
+          <img class="bottom-card__icon"  src="images/icon-instagram.svg" alt="Instagram">
+          <div class="bottom-card__number">52k</div>
+          <div class="bottom-card__change bottom-card__change--up">
+            <img src="images/icon-up.svg" alt="Up">
+            <div>1375%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Retweets</div>
+          <img class="bottom-card__icon"  src="images/icon-twitter.svg" alt="Twitter">
+          <div class="bottom-card__number">117</div>
+          <div class="bottom-card__change bottom-card__change--up">
+            <img src="images/icon-up.svg" alt="Up">
+            <div>303%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Likes</div>
+          <img class="bottom-card__icon"  src="images/icon-twitter.svg" alt="Twitter">
+          <div class="bottom-card__number">507</div>
+          <div class="bottom-card__change bottom-card__change--up">
+            <img src="images/icon-up.svg" alt="Up">
+            <div>553%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Likes</div>
+          <img class="bottom-card__icon"  src="images/icon-youtube.svg" alt="Youtube">
+          <div class="bottom-card__number">107</div>
+          <div class="bottom-card__change bottom-card__change--down">
+            <img src="images/icon-down.svg" alt="Down">
+            <div>19%</div>
+          </div>
+        </div>
+        <div class="bottom-card">
+          <div class="bottom-card__views">Total Views</div>
+          <img class="bottom-card__icon"  src="images/icon-youtube.svg" alt="Youtube">
+          <div class="bottom-card__number">1407</div>
+          <div class="bottom-card__change bottom-card__change--down">
+            <img src="images/icon-down.svg" alt="Down">
+            <div>12%</div>
+          </div>
+        </div>
       </div>
     </section>
     
   </main>
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 

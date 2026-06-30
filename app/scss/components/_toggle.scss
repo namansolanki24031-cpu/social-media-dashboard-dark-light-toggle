@@ -3,19 +3,17 @@
 .toggle {
     border:  none;
     display: grid;
-    grid-template-columns: 1fr rem(70) 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr rem(70);
+    grid-template-rows: 1fr;
+    // justify-content: space-between;
     column-gap: rem(2);
-
-
 
     &__wrapper {
         grid-column: 2/3;
-        // width: rem(50);
+        width: rem(48);
         justify-self: center;
 
         height: rem(24);
-        width: rem(54);
         // overflow: hidden;
         
         position: relative;
@@ -25,24 +23,19 @@
         #light:checked ~ .toggle__button{
             left: calc(100% - rem(20));
         }
-
-        #dark:checked ~ .toggle__button{
-            left: rem(3);
-        }
-
         
     }
     
     input[type="radio"] {
         // margin: 0 rem(-1.5) 0 0;
-        margin-right: rem(-5);
+        margin-left: rem(3);
         opacity: 0;
         height: rem(18);
         width: rem(18);
-        margin-top: rem(4);
+        margin-top: rem(3);
 
         &:focus ~ .toggle__button{
-            border: 2px solid var(--dark-text2);
+            border: 2px solid var(--text-color);
         }
 
     }
@@ -61,12 +54,12 @@
 
     &__button{
         position: absolute;
-        left: calc(100% - 36px);
+        left: rem(3);
         top: rem(3);
         width: rem(18);
         height: rem(18);
         border-radius: 50%;
-        background-color: var(--dark-bg);
+        background-color: var(--bg);
         pointer-events: none;
 
         transition: left 0.1s linear 0s;
@@ -75,20 +68,12 @@
     label{
         cursor: pointer;
         font-size: rem(14);
-
-        &[for="system"] {
-            grid-column: 2/3;
-            grid-row: 2/3;
-            justify-self: center;
-        }
+        color: var(--toggle);
+        font-weight: 700;
 
         &[for="dark"] {
             grid-column: 1/2;
             justify-self: right;
-        }
-        &[for="light"] {
-            grid-column: 3/4;
-            justify-self: left;
         }
 
     }

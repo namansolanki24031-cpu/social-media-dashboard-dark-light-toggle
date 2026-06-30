@@ -18,14 +18,20 @@
 }
 
 .card{
-    background-color: var(--dark-card-bg);
-    color: var(--dark-text1);
+    background-color: var(--card-bg);
+    color: var(--text-color2);
     text-align: center;
     // min-width: 0;
     // width: 100%;
     // max-width: rem(255);// temporary
     border-radius: rem(5);
     padding: rem(25);
+    transition: background-color 150ms ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--card-hover);
+    }
 
     &--facebook{
         border-top: rem(4) solid var(--facebook);
@@ -81,7 +87,7 @@
     }
 
     &__count{
-        color: var(--light-bg);
+        color: var(--text-bg);
         font-weight: 700;
         letter-spacing: rem(-2);
         margin-bottom: rem(4);
@@ -95,7 +101,7 @@
     }
 
     &__label{
-        color: var(--dark-text1);
+        color: var(--text-color2);
         font-size: rem(12);
         font-width: 400;
         text-transform: uppercase;
@@ -104,7 +110,7 @@
 
     &__change{
         font-size: rem(12);
-        font-width: 700;
+        font-weight: 700;
         display: flex;
         justify-content: center;
         align-items: center;
