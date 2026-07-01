@@ -47,7 +47,7 @@
         height: 100%;
         width: 100%;
         display: block;
-        background-image: linear-gradient(225deg,var(--toggle-bg-start) 0%,var(--toggle-bg-end) 98.02%);
+        background: var(--toggle-bg);
         border-radius: rem(12);
         pointer-events: none;
     }
@@ -59,7 +59,7 @@
         width: rem(18);
         height: rem(18);
         border-radius: 50%;
-        background-color: var(--bg);
+        background-color: var(--toggle-button);
         pointer-events: none;
 
         transition: left 0.1s linear 0s;
